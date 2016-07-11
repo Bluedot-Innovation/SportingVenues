@@ -1,9 +1,8 @@
 //
-//  ViewController.m
-//  SportingVenues
+//  Created by Bluedot Innovation
+//  Copyright (c) 2016 Bluedot Innovation. All rights reserved.
 //
-//  Created by Balendran on 7/07/2016.
-//  Copyright © 2016 Balendran. All rights reserved.
+//  Implementation of the Root ViewController to Authenticate & Logout Bluedot Point SDK
 //
 
 #import "ViewController.h"

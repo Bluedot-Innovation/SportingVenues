@@ -1,9 +1,8 @@
 //
-//  AppDelegate.h
-//  SportingVenues
+//  Created by Bluedot Innovation
+//  Copyright (c) 2016 Bluedot Innovation. All rights reserved.
 //
-//  Created by Balendran on 7/07/2016.
-//  Copyright © 2016 Balendran. All rights reserved.
+//  Interface of AppDelegate of SportingVenues Demo App
 //
 
 #import <UIKit/UIKit.h>
