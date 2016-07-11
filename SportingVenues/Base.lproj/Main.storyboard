@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaD-bw-ANM">
+                                <rect key="frame" x="20" y="431" width="559" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLogout:" destination="BYZ-38-t0r" eventType="touchDown" id="W8p-UE-fxd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner3-carousel.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7Ga-RO-3Y7">
+                                <rect key="frame" x="20" y="70" width="559" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="raX-Ed-NRP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tL-ZK-cik">
+                                <rect key="frame" x="20" y="388" width="559" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Authenticate with Bluedot SDK">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAuthenticate:" destination="BYZ-38-t0r" eventType="touchDown" id="y9c-zC-Unq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vaD-bw-ANM" firstAttribute="trailing" secondItem="6tL-ZK-cik" secondAttribute="trailing" id="1XS-ZS-dxK"/>
+                            <constraint firstItem="7Ga-RO-3Y7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="2tJ-4g-wCN"/>
+                            <constraint firstItem="6tL-ZK-cik" firstAttribute="top" secondItem="7Ga-RO-3Y7" secondAttribute="bottom" constant="158" id="BDL-Oq-c1f"/>
+                            <constraint firstItem="6tL-ZK-cik" firstAttribute="leading" secondItem="7Ga-RO-3Y7" secondAttribute="leading" id="FeB-z7-93Z"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="7Ga-RO-3Y7" secondAttribute="trailing" id="GDn-Xo-3xQ"/>
+                            <constraint firstItem="vaD-bw-ANM" firstAttribute="leading" secondItem="6tL-ZK-cik" secondAttribute="leading" id="HsW-Q4-Oyj"/>
+                            <constraint firstItem="7Ga-RO-3Y7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JgN-xO-9Jf"/>
+                            <constraint firstItem="vaD-bw-ANM" firstAttribute="top" secondItem="6tL-ZK-cik" secondAttribute="bottom" constant="8" symbolic="YES" id="W5D-Sd-qrO"/>
+                            <constraint firstItem="7Ga-RO-3Y7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aNh-tE-UE4"/>
+                            <constraint firstItem="6tL-ZK-cik" firstAttribute="trailing" secondItem="7Ga-RO-3Y7" secondAttribute="trailing" id="npB-BU-0iS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vaD-bw-ANM" secondAttribute="bottom" constant="8" symbolic="YES" id="yAP-QO-FLY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="452"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LCf-lG-TUV">
+            <objects>
+                <viewController storyboardIdentifier="QRCodeViewController" id="QXt-fY-xRR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TCs-Yy-nde"/>
+                        <viewControllerLayoutGuide type="bottom" id="V8I-KM-rqK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9mV-MH-Y3a">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR Code" translatesAutoresizingMaskIntoConstraints="NO" id="MCY-Q3-Wzn">
+                                <rect key="frame" x="115" y="115" width="370" height="370"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="370" id="4qb-EZ-kI9"/>
+                                    <constraint firstAttribute="width" constant="370" id="8gF-KI-ngw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to check in!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qv7-XS-Txh">
+                                <rect key="frame" x="192.5" y="28" width="215" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MCY-Q3-Wzn" firstAttribute="centerX" secondItem="9mV-MH-Y3a" secondAttribute="centerX" id="6iK-O3-TFt"/>
+                            <constraint firstItem="Qv7-XS-Txh" firstAttribute="centerX" secondItem="9mV-MH-Y3a" secondAttribute="centerX" id="Au7-Ja-4Jz"/>
+                            <constraint firstItem="Qv7-XS-Txh" firstAttribute="top" secondItem="TCs-Yy-nde" secondAttribute="bottom" constant="8" symbolic="YES" id="n0y-l7-obr"/>
+                            <constraint firstItem="MCY-Q3-Wzn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Qv7-XS-Txh" secondAttribute="bottom" constant="8" symbolic="YES" id="qRQ-5D-KU3"/>
+                            <constraint firstItem="MCY-Q3-Wzn" firstAttribute="centerY" secondItem="9mV-MH-Y3a" secondAttribute="centerY" id="zrW-un-QsD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MqA-Ob-D0c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="452"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="QR Code" width="370" height="370"/>
+        <image name="banner3-carousel.jpg" width="1920" height="700"/>
+    </resources>
+</document>
