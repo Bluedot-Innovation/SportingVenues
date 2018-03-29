@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		78FD6D73206C6CD60031A0DF /* BDPointSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FD6D72206C6CD60031A0DF /* BDPointSDK.framework */; };
+		78FD6D74206C6CD60031A0DF /* BDPointSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78FD6D72206C6CD60031A0DF /* BDPointSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A43065E1D337AE900505DF6 /* banner3-carousel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A43065D1D337AE900505DF6 /* banner3-carousel.jpg */; };
 		B0A7CDC81D2E036E00387967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7CDC71D2E036E00387967 /* main.m */; };
 		B0A7CDCB1D2E036E00387967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7CDCA1D2E036E00387967 /* AppDelegate.m */; };
@@ -45,7 +47,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		78FD6D75206C6CD60031A0DF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				78FD6D74206C6CD60031A0DF /* BDPointSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		78FD6D72206C6CD60031A0DF /* BDPointSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDPointSDK.framework; sourceTree = "<group>"; };
 		9A43065D1D337AE900505DF6 /* banner3-carousel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "banner3-carousel.jpg"; sourceTree = "<group>"; };
 		B0A7CDC31D2E036E00387967 /* SportingVenues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportingVenues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A7CDC71D2E036E00387967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +103,7 @@
 				B0A7CE411D2E673100387967 /* MapKit.framework in Frameworks */,
 				B0A7CE3F1D2E672A00387967 /* CoreGraphics.framework in Frameworks */,
 				B0A7CE3D1D2E672300387967 /* AudioToolbox.framework in Frameworks */,
+				78FD6D73206C6CD60031A0DF /* BDPointSDK.framework in Frameworks */,
 				B0A7CE3B1D2E671A00387967 /* UIKit.framework in Frameworks */,
 				B0A7CE391D2E671400387967 /* AVFoundation.framework in Frameworks */,
 				B0A7CE371D2E670D00387967 /* Foundation.framework in Frameworks */,
@@ -112,6 +130,7 @@
 		B0A7CDBA1D2E036E00387967 = {
 			isa = PBXGroup;
 			children = (
+				78FD6D72206C6CD60031A0DF /* BDPointSDK.framework */,
 				B0A7CE461D2E674900387967 /* CoreLocation.framework */,
 				B0A7CE441D2E674200387967 /* CoreMotion.framework */,
 				B0A7CE421D2E673900387967 /* SystemConfiguration.framework */,
@@ -192,6 +211,7 @@
 				B0A7CDBF1D2E036E00387967 /* Sources */,
 				B0A7CDC01D2E036E00387967 /* Frameworks */,
 				B0A7CDC11D2E036E00387967 /* Resources */,
+				78FD6D75206C6CD60031A0DF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +269,7 @@
 				TargetAttributes = {
 					B0A7CDC21D2E036E00387967 = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Automatic;
 					};
 					B0A7CDDE1D2E036E00387967 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -458,36 +479,49 @@
 		B0A7CDF41D2E036E00387967 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/PointSDK/include";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SportingVenues/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "${PROJECT_DIR}/PointSDK";
-				OTHER_LDFLAGS = (
-					"-lBDPointSDK-${PLATFORM_NAME}",
-					"-ObjC",
-				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = BluedotInnovation.SportingVenues;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		B0A7CDF51D2E036E00387967 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = "${PROJECT_DIR}/PointSDK/include";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = SportingVenues/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "${PROJECT_DIR}/PointSDK";
-				OTHER_LDFLAGS = (
-					"-lBDPointSDK-${PLATFORM_NAME}",
-					"-ObjC",
-				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = BluedotInnovation.SportingVenues;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

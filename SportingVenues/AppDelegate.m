@@ -6,7 +6,7 @@
 //
 
 #import "AppDelegate.h"
-#import <BDPointSDK.h>
+@import BDPointSDK;
 
 @interface AppDelegate ()
 

@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <BDPointSDK.h>
+@import BDPointSDK;
 
 @interface ViewController ()<BDPSessionDelegate, BDPLocationDelegate>
 
