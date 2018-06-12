@@ -1,4 +1,5 @@
 *.xcuserstate
+Podfile.lock
 
 # Created by https://www.gitignore.io/api/osx,xcode,cocoapods
 
