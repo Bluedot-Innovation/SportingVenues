@@ -44,12 +44,10 @@
 -(void)authenticateWithBluedotSDK
 {
     NSString  *apiKey      = @"PUT YOUR API KEY HERE";          // Api key which can be retrieved from Point Access Web Interface
-    NSString  *packageName = @"PUT YOUR PACKAGE NAME HERE";     // Package name which can be retrieved from Point Access Web Interface
-    NSString  *username    = @"PUT YOUR USERNAME HERE";         // Username which you used to login Point Access Web Interface
     
     BDLocationManager  *locationManager = BDLocationManager.instance;
     
-    [ locationManager authenticateWithApiKey: apiKey packageName: packageName username: username ];
+    [locationManager authenticateWithApiKey: apiKey];
 }
 
 #pragma mark - BDPSessionDelegate
@@ -82,9 +80,7 @@
     NSLog( @"Authentication failed, with error: %@", error.localizedDescription );
 }
 
-- (void)willAuthenticateWithUsername: (NSString *)username
-                              apiKey: (NSString *)apiKey
-                         packageName: (NSString *)packageName
+- (void)willAuthenticateWithApiKey: (NSString *)apiKey
 {
      NSLog(@"Authenticating with Bluedot SDK");
     

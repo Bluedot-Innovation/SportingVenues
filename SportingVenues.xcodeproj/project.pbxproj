@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		78FD6D73206C6CD60031A0DF /* BDPointSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78FD6D72206C6CD60031A0DF /* BDPointSDK.framework */; };
-		78FD6D74206C6CD60031A0DF /* BDPointSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 78FD6D72206C6CD60031A0DF /* BDPointSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A43065E1D337AE900505DF6 /* banner3-carousel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A43065D1D337AE900505DF6 /* banner3-carousel.jpg */; };
 		B0A7CDC81D2E036E00387967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7CDC71D2E036E00387967 /* main.m */; };
 		B0A7CDCB1D2E036E00387967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A7CDCA1D2E036E00387967 /* AppDelegate.m */; };
@@ -28,6 +26,9 @@
 		B0A7CE431D2E673900387967 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A7CE421D2E673900387967 /* SystemConfiguration.framework */; };
 		B0A7CE451D2E674200387967 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A7CE441D2E674200387967 /* CoreMotion.framework */; };
 		B0A7CE471D2E674900387967 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A7CE461D2E674900387967 /* CoreLocation.framework */; };
+		E15FAA14465738B625629BB3 /* libPods-SportingVenues.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DB75977B873E6929EA180D /* libPods-SportingVenues.a */; };
+		EBF5C97D8AE2E509FE885B24 /* libPods-SportingVenuesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A70346001625A9B6500CFC36 /* libPods-SportingVenuesUITests.a */; };
+		FC9B30251918B12A2B251019 /* libPods-SportingVenuesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0D6FFA64F868AE09F920F2 /* libPods-SportingVenuesTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				78FD6D74206C6CD60031A0DF /* BDPointSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,8 +62,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		78FD6D72206C6CD60031A0DF /* BDPointSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BDPointSDK.framework; sourceTree = "<group>"; };
+		0A55A39F5D0A6F4CF0CDF9CC /* Pods-SportingVenues.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportingVenues.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportingVenues/Pods-SportingVenues.debug.xcconfig"; sourceTree = "<group>"; };
+		40995E5B9BABA2375B07BE1D /* Pods-SportingVenuesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportingVenuesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportingVenuesTests/Pods-SportingVenuesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A6956EBE94E69B8CACB5F57 /* Pods-SportingVenuesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportingVenuesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SportingVenuesUITests/Pods-SportingVenuesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DF99C209DA974AC115BF520 /* Pods-SportingVenuesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportingVenuesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportingVenuesTests/Pods-SportingVenuesTests.release.xcconfig"; sourceTree = "<group>"; };
+		82DB75977B873E6929EA180D /* libPods-SportingVenues.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportingVenues.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85050FDFC2E43B563B5DCC4C /* Pods-SportingVenuesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportingVenuesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportingVenuesUITests/Pods-SportingVenuesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9A43065D1D337AE900505DF6 /* banner3-carousel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "banner3-carousel.jpg"; sourceTree = "<group>"; };
+		A70346001625A9B6500CFC36 /* libPods-SportingVenuesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportingVenuesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABCA00FC1BCE9EE5F6C5425B /* Pods-SportingVenues.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SportingVenues.release.xcconfig"; path = "Pods/Target Support Files/Pods-SportingVenues/Pods-SportingVenues.release.xcconfig"; sourceTree = "<group>"; };
 		B0A7CDC31D2E036E00387967 /* SportingVenues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportingVenues.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0A7CDC71D2E036E00387967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B0A7CDC91D2E036E00387967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +97,7 @@
 		B0A7CE421D2E673900387967 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B0A7CE441D2E674200387967 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		B0A7CE461D2E674900387967 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BF0D6FFA64F868AE09F920F2 /* libPods-SportingVenuesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SportingVenuesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +111,10 @@
 				B0A7CE411D2E673100387967 /* MapKit.framework in Frameworks */,
 				B0A7CE3F1D2E672A00387967 /* CoreGraphics.framework in Frameworks */,
 				B0A7CE3D1D2E672300387967 /* AudioToolbox.framework in Frameworks */,
-				78FD6D73206C6CD60031A0DF /* BDPointSDK.framework in Frameworks */,
 				B0A7CE3B1D2E671A00387967 /* UIKit.framework in Frameworks */,
 				B0A7CE391D2E671400387967 /* AVFoundation.framework in Frameworks */,
 				B0A7CE371D2E670D00387967 /* Foundation.framework in Frameworks */,
+				E15FAA14465738B625629BB3 /* libPods-SportingVenues.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9B30251918B12A2B251019 /* libPods-SportingVenuesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBF5C97D8AE2E509FE885B24 /* libPods-SportingVenuesUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +140,6 @@
 		B0A7CDBA1D2E036E00387967 = {
 			isa = PBXGroup;
 			children = (
-				78FD6D72206C6CD60031A0DF /* BDPointSDK.framework */,
 				B0A7CE461D2E674900387967 /* CoreLocation.framework */,
 				B0A7CE441D2E674200387967 /* CoreMotion.framework */,
 				B0A7CE421D2E673900387967 /* SystemConfiguration.framework */,
@@ -144,6 +153,8 @@
 				B0A7CDE21D2E036E00387967 /* SportingVenuesTests */,
 				B0A7CDED1D2E036E00387967 /* SportingVenuesUITests */,
 				B0A7CDC41D2E036E00387967 /* Products */,
+				F6608DF843890C3FA6921448 /* Pods */,
+				BD682F651C2FD1B9BD305F81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -201,6 +212,29 @@
 			path = SportingVenuesUITests;
 			sourceTree = "<group>";
 		};
+		BD682F651C2FD1B9BD305F81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82DB75977B873E6929EA180D /* libPods-SportingVenues.a */,
+				BF0D6FFA64F868AE09F920F2 /* libPods-SportingVenuesTests.a */,
+				A70346001625A9B6500CFC36 /* libPods-SportingVenuesUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6608DF843890C3FA6921448 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A55A39F5D0A6F4CF0CDF9CC /* Pods-SportingVenues.debug.xcconfig */,
+				ABCA00FC1BCE9EE5F6C5425B /* Pods-SportingVenues.release.xcconfig */,
+				40995E5B9BABA2375B07BE1D /* Pods-SportingVenuesTests.debug.xcconfig */,
+				5DF99C209DA974AC115BF520 /* Pods-SportingVenuesTests.release.xcconfig */,
+				5A6956EBE94E69B8CACB5F57 /* Pods-SportingVenuesUITests.debug.xcconfig */,
+				85050FDFC2E43B563B5DCC4C /* Pods-SportingVenuesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,11 +242,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0A7CDF31D2E036E00387967 /* Build configuration list for PBXNativeTarget "SportingVenues" */;
 			buildPhases = (
+				DED2DF087572AB57CF01DDE8 /* [CP] Check Pods Manifest.lock */,
 				B0A7CDBF1D2E036E00387967 /* Sources */,
 				B0A7CDC01D2E036E00387967 /* Frameworks */,
 				B0A7CDC11D2E036E00387967 /* Resources */,
 				78FD6D75206C6CD60031A0DF /* Embed Frameworks */,
 				78FD6D7B206C85330031A0DF /* Strip Symbols */,
+				4990D2F4A9C871384E58F8A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0A7CDF61D2E036E00387967 /* Build configuration list for PBXNativeTarget "SportingVenuesTests" */;
 			buildPhases = (
+				279DE33A994B1B0E51F0504E /* [CP] Check Pods Manifest.lock */,
 				B0A7CDDB1D2E036E00387967 /* Sources */,
 				B0A7CDDC1D2E036E00387967 /* Frameworks */,
 				B0A7CDDD1D2E036E00387967 /* Resources */,
@@ -245,6 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0A7CDF91D2E036E00387967 /* Build configuration list for PBXNativeTarget "SportingVenuesUITests" */;
 			buildPhases = (
+				FF6A4D52FC8ACBD2843052AE /* [CP] Check Pods Manifest.lock */,
 				B0A7CDE61D2E036E00387967 /* Sources */,
 				B0A7CDE71D2E036E00387967 /* Frameworks */,
 				B0A7CDE81D2E036E00387967 /* Resources */,
@@ -331,6 +369,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		279DE33A994B1B0E51F0504E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportingVenuesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4990D2F4A9C871384E58F8A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SportingVenues/Pods-SportingVenues-frameworks.sh",
+				"${PODS_ROOT}/BluedotPointSDK/PointSDK/BDPointSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDPointSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SportingVenues/Pods-SportingVenues-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		78FD6D7B206C85330031A0DF /* Strip Symbols */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -344,6 +418,42 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#/bin/bash\nAPP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone";
+		};
+		DED2DF087572AB57CF01DDE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportingVenues-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF6A4D52FC8ACBD2843052AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SportingVenuesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -447,7 +557,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -486,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -496,6 +606,7 @@
 		};
 		B0A7CDF41D2E036E00387967 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A55A39F5D0A6F4CF0CDF9CC /* Pods-SportingVenues.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -521,6 +632,7 @@
 		};
 		B0A7CDF51D2E036E00387967 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABCA00FC1BCE9EE5F6C5425B /* Pods-SportingVenues.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -545,6 +657,7 @@
 		};
 		B0A7CDF71D2E036E00387967 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40995E5B9BABA2375B07BE1D /* Pods-SportingVenuesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SportingVenuesTests/Info.plist;
@@ -557,6 +670,7 @@
 		};
 		B0A7CDF81D2E036E00387967 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF99C209DA974AC115BF520 /* Pods-SportingVenuesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SportingVenuesTests/Info.plist;
@@ -569,6 +683,7 @@
 		};
 		B0A7CDFA1D2E036E00387967 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A6956EBE94E69B8CACB5F57 /* Pods-SportingVenuesUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SportingVenuesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -580,6 +695,7 @@
 		};
 		B0A7CDFB1D2E036E00387967 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85050FDFC2E43B563B5DCC4C /* Pods-SportingVenuesUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SportingVenuesUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
